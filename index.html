@@ -71,6 +71,24 @@
     color: #fff;
   }
 
+  .lang-bar a.back-btn {
+    background: var(--blue);
+    color: #fff;
+    border: 1px solid var(--blue-bright);
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .lang-bar a.back-btn:hover,
+  .lang-bar a.back-btn:focus-visible {
+    background: var(--blue-bright);
+    box-shadow: 0 0 14px var(--blue-glow);
+  }
+
   header.hero {
     text-align: center;
     padding: 90px 24px 70px;
@@ -199,6 +217,7 @@
 <body>
 
 <div class="lang-bar">
+  <a class="back-btn" href="https://thefakepepsi.github.io/StudySyncMainWebsite/" data-i18n="back_btn">← Back to StudySync</a>
   <span data-i18n="localized_to">Localized to: English</span>
   <select id="langSelect">
     <option value="en">English</option>
@@ -305,6 +324,7 @@
 
   const translations = {
     en: {
+      back_btn: "← Back to StudySync",
       localized_to: "Localized to: English", switch_english: "Switch to English", by: "by",
       welcome_title: "Welcome to our VR Hub!",
       welcome_p1: "Welcome Students, to a learning experience so interactive and entertaining, as if it was happening in front of you! We present The VR Hub, with numerous different VR Simulations currently available!",
@@ -319,6 +339,7 @@
       footer: "© 2026 EduPulse. The VR Hub is a trademark of EduPulse."
     },
     ar: {
+      back_btn: "→ العودة إلى StudySync",
       localized_to: "معروض باللغة: العربية", switch_english: "التحويل إلى الإنجليزية (English)", by: "بواسطة",
       welcome_title: "مرحبًا بكم في مركز الواقع الافتراضي!",
       welcome_p1: "مرحبًا أيها الطلاب، في تجربة تعليمية تفاعلية وممتعة، وكأنها تحدث أمامكم! نقدم لكم The VR Hub، بعدد كبير من تجارب الواقع الافتراضي المتاحة حاليًا!",
@@ -333,6 +354,7 @@
       footer: "© 2026 EduPulse. مركز الواقع الافتراضي علامة تجارية لشركة EduPulse."
     },
     hi: {
+      back_btn: "← StudySync पर वापस जाएँ",
       localized_to: "स्थानीयकृत भाषा: हिन्दी", switch_english: "अंग्रेज़ी में बदलें (English)", by: "द्वारा",
       welcome_title: "हमारे VR हब में आपका स्वागत है!",
       welcome_p1: "छात्रों, आपका स्वागत है एक ऐसे सीखने के अनुभव में जो इतना इंटरैक्टिव और मनोरंजक है मानो यह आपके सामने ही हो रहा हो! प्रस्तुत है The VR Hub, जिसमें कई अलग-अलग VR सिमुलेशन उपलब्ध हैं!",
@@ -347,6 +369,7 @@
       footer: "© 2026 EduPulse. VR हब EduPulse का एक ट्रेडमार्क है।"
     },
     ur: {
+      back_btn: "→ StudySync پر واپس جائیں",
       localized_to: "مقامی زبان: اردو", switch_english: "انگریزی میں تبدیل کریں (English)", by: "کی طرف سے",
       welcome_title: "ہمارے VR ہب میں خوش آمدید!",
       welcome_p1: "طلباء، خوش آمدید ایک ایسے سیکھنے کے تجربے میں جو اتنا دلچسپ اور تفریحی ہے جیسے یہ آپ کے سامنے ہو رہا ہو! پیش ہے The VR Hub، جس میں کئی مختلف VR تجربات دستیاب ہیں!",
@@ -361,6 +384,7 @@
       footer: "© 2026 EduPulse. VR ہب EduPulse کا ٹریڈ مارک ہے۔"
     },
     ru: {
+      back_btn: "← Назад на StudySync",
       localized_to: "Язык: русский", switch_english: "Переключить на английский (English)", by: "от",
       welcome_title: "Добро пожаловать в наш VR Hub!",
       welcome_p1: "Добро пожаловать, студенты, в обучение настолько интерактивное и увлекательное, будто всё происходит прямо перед вами! Представляем The VR Hub с множеством VR-симуляций!",
@@ -375,6 +399,7 @@
       footer: "© 2026 EduPulse. VR Hub — товарный знак компании EduPulse."
     },
     zh: {
+      back_btn: "← 返回 StudySync",
       localized_to: "当前语言：中文", switch_english: "切换为英文 (English)", by: "出品方",
       welcome_title: "欢迎来到我们的VR中心！",
       welcome_p1: "欢迎同学们，体验一种如此互动、如此有趣的学习方式，仿佛一切就发生在你眼前！为您呈现 The VR Hub，现已提供多种不同的VR模拟体验！",
@@ -389,6 +414,7 @@
       footer: "© 2026 EduPulse。VR中心是 EduPulse 的商标。"
     },
     te: {
+      back_btn: "← StudySyncకు తిరిగి వెళ్లండి",
       localized_to: "స్థానికీకరించిన భాష: తెలుగు", switch_english: "ఇంగ్లీష్‌కు మార్చండి (English)", by: "ద్వారా",
       welcome_title: "మా VR హబ్‌కు స్వాగతం!",
       welcome_p1: "విద్యార్థులారా, మీ ముందే జరుగుతున్నట్లుగా అనిపించే ఇంటరాక్టివ్, ఆసక్తికరమైన అభ్యాస అనుభవానికి స్వాగతం! ప్రస్తుతం అందుబాటులో ఉన్న అనేక VR అనుభవాలతో The VR Hubని మేము మీకు అందిస్తున్నాం!",
@@ -403,6 +429,7 @@
       footer: "© 2026 EduPulse. VR హబ్ అనేది EduPulse యొక్క ట్రేడ్‌మార్క్."
     },
     ta: {
+      back_btn: "← StudySync-க்குத் திரும்பு",
       localized_to: "மொழி: தமிழ்", switch_english: "ஆங்கிலத்திற்கு மாற்று (English)", by: "வழங்குபவர்",
       welcome_title: "எங்கள் VR ஹப்பிற்கு வரவேற்கிறோம்!",
       welcome_p1: "மாணவர்களே, உங்கள் முன்னால் நடப்பது போல் இருக்கும் அளவிற்கு ஊடாடும், சுவாரஸ்யமான கற்றல் அனுபவத்திற்கு வரவேற்கிறோம்! பல்வேறு VR சிமுலேஷன்களுடன் The VR Hub-ஐ வழங்குகிறோம்!",
@@ -428,7 +455,7 @@
     document.documentElement.lang = lang;
     document.documentElement.dir = rtlLangs.includes(lang) ? "rtl" : "ltr";
     document.getElementById("langSelect").value = lang;
-    localStorage.setItem("vrhub_lang", lang);
+    try { localStorage.setItem("vrhub_lang", lang); } catch (e) {}
     document.getElementById("switchEnglishBtn").style.display = (lang === "en") ? "none" : "inline-block";
   }
 
